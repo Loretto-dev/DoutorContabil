@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DRE - Demonstrativo do Resultado do Exercicio</title>
+</head>
+<body>
+    <!-- Inicio do Colocando horas em javascript dentro do HTML -->
+<!--     <script>
+        let d = new Date();
+        document.body.innerHTML = "Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+        "</h1>"
+    </script> -->
+    <!-- Fim do Colocando horas em javascript dentro do HTML -->
+    <header>
+        <div>
+            <h1><img class="imgMenu" src="img/logo.png" alt="Logo site"></h1>
+            <nav>
+                <a class="pagina_inicial" href="index.html"> Inicio </a>
+                <ul>
+                    <a class="inicioDre" href="index.html"> O que é DRE? </a>
+                    <a class="inicioLegislacao" href="index.html"> Legislação </a>
+                    <a class="inicioPeriodicidade" href="index.html"> Periodicidade </a>
+                </ul>
+                <a class="paginaDre" href="dre.html"> Demonstração Resultado Exercicio </a>
+            </nav>
+        </div>
+<!--         <img class="imgDre" src="img/dre-gif.gif"> -->
+    </header>
+    <main class="corpo">
+        <section class="historia">
+            <div>
+                <blockquote>
+                <h2 class="tituloDre"> O que é o lucro liquido? </h2>
+
+                    <p class="texto">O grande objetivo financeiro de todo o negócio é gerar resultado.
+                        Dessa forma, o lucro líquido é um indicador fundamental, tanto para a empresa 
+                        quanto para os investidores.
+
+                        Afinal, é ele que financiará o desenvolvimento da organização. Além de remunerar
+                        os investidores, o resultado positivo proporcionará crescimento, por meio de 
+                        investimentos em pessoal, produtos e tecnologia.
+
+                        De maneira simplificada, o lucro líquido é a diferença entre todas as receitas da
+                        empresa e todos os gastos envolvidos para que ela funcione. Ou seja, é todo o recurso 
+                        que sobra depois de deduzidos os custos, despesas e impostos.
+                    </p>
+                <h3 class="tituloDre">Nós entramos em contato com sua empresa:   </h3>
+                <p class="textoForm"> Agora que você ja sabe o que é lucro liquido, forneca abaixo 
+                os dados para entrarmos em contato: </p>
+                </blockquote>
+             </div>  
+        </section>
+        <!-- INICIO DA SECTION  TESTE DE PARA JAVASCRIPT -->
+<!--         <section>
+            <form>
+                <p>Entre com seu endereço de email: </p>
+                <input id='email'>
+                <button type='submit' id='validate'>Enviar</button>
+                </form>
+                <h2 id='result'></h2>
+        </section> -->
+        <!-- FIM DA SECTION  TESTE DE PARA JAVASCRIPT -->
+
+        <section> <!-- INPUT de dados dos usuarios -->
+            <blockquote>
+            <form class="coletaDados">
+                <label for="nomesobrenome" class="titulo-input">Razão Social</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email" class="titulo-input">Email</label>
+                <input type="email" id="email" class="input-padrao"required placeholder="seuemail@dominio.com">
+
+                <label for="telefone" class="titulo-input">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
+
+                <label for="mensagem" class="titulo-input">Mensagem</label>
+                <textarea cols="71" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                <fieldset class="titulo-input">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                    
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
+                <fieldset class="titulo-input">
+                    <legend>Qual a categoria da sua empresa em relação ao seu porte?</legend>
+                    <select>
+                        <option>MEI - faturamento anual até R$ 81 mil no ano</option>
+                        <option>Microempresa (ME) - Faturamento anual até R$ 360 mil por ano</option>
+                        <option>Empresa de Pequeno Porte (EPP) -  Faturamento anual até R$ 4,8 milhões por ano</option>
+                        <option>Empresas de médio porte e grande porte -  Faturamento anual acima R$ 4,8 milhões por ano</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+            </form>
+            </blockquote>
+            <input type="submit" value="Enviar dados" class="enviar">
+        </section>
+
+
+
+        <section>
+            <div class="titulo-social-media">
+                <a>Acesse minhas Redes Sociais</a>
+            </div>
+
+            <div class="redes-sociais">
+                <a href="https://github.com/Loretto-dev"><img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/128/github-icon.png"></a>
+                <a href="https://www.instagram.com/eliveltonalves/"><img src="https://cdn.icon-icons.com/icons2/1584/PNG/128/3721672-instagram_108066.png"></a>
+                <a href="https://www.linkedin.com/in/elivelton-alves-13681811a/"><img src="https://icons.iconarchive.com/icons/danleech/simple/128/linkedin-icon.png"></a>
+                <a href="https://www.facebook.com/elivelton.alves.98"><img src=" https://icons.iconarchive.com/icons/danleech/simple/128/facebook-icon.png"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="img/logo.png" alt="Logo_site">
+        <p class="copyright">&copy; Copyright Loretto Empreendimentos - 2021</p>
+    </footer>
+</body>
+<!-- <script src="js/validacao.js"></script> -->
+</html>
