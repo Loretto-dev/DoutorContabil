@@ -1,37 +1,45 @@
 //DRE - Demonstração dos resultados do exercicio - Podendo ser feita no periodo de 1 mês, 1 trimestre, 1 semestre ou 1 ano//
 
 //Receita Operacional Bruta - Faturamento total da empresa no periodo
-let receitaBruta = 100000;
+const receitaBruta =  200000;
 
+//const receitaBruta =  document.dreJs.elements("receitaBruta").value;
 
 //***********Despesas******************/
 //Devoluções do periodo;
-let devolucoes = 1000;
+const devolucoes = 2000;
 //Devoluções pagos no periodo;
-let impostosSobreVenda = 19000;
-//Custo mercadoria vendida;
-let cmv = 15000;
-//Custo produto vendido;
-let cpv = 15000;
-//Custo serviço prestado;
-let csp = 10000;
-//Despesas Administrativas - Gastos com o departamento administrativo;
-let despAdm = 10000;
-//Despesas Comerciais - Gastos com o departamento comercial, departamento de vendas;
-let despCom = 5000;
-//Despesas de Depreciação - Equipamentos e maquinas quebrados, obsoletos;
-let despDep = 2000;
-//Despesas financeiras - Taxas de emprestimos;
-let despFin = 1000;
-//Despesas não Operacionais - Gastos que não te relação com a operação EX: gastos de reforma de imoveis;
-let despNaoOp = 10000;
+const impostosSobreVenda =   5000;
 
+
+
+
+/*******************************************************************************************/
+//Custo mercadoria vendida;
+let cmv =  10000;
+//Custo produto vendido;
+let cpv =  15000;
+//Custo serviço prestado;
+let csp =  4000;
+//Despesas Administrativas - Gastos com o departamento administrativo;
+let despAdm =  25000;
+//Despesas Comerciais - Gastos com o departamento comercial, departamento de vendas;
+let despCom =  40000;
+//Despesas de Depreciação - Equipamentos e maquinas quebrados, obsoletos;
+let despDep =  3000;
+//Despesas financeiras - Taxas de emprestimos;
+let despFin =  6000;
+//Despesas não Operacionais - Gastos que não te relação com a operação EX: gastos de reforma de imoveis;
+let despNaoOp = 1000;
 
 //***********Receitas******************/
 //Receitas Financeira - Investimentos em ações, aluguel de algum bem, ou seja, dinheiro que rende;
-let recFin = 3000;
+let recFin =  30000;
 //Receita Não Operacionais - São receitas não relacionadas com a operação. EX: lucro do aluguem de imoveis;
-let recNaoOp = 15000;
+let recNaoOp =  20000;
+
+/****************************************************************************************/
+
 
 
 
@@ -89,11 +97,10 @@ console.log(`O total do LAIR - Lucro antes do Imposto de Renda foi:  ${lair()}`)
 
 
 
-/*5º - Função: Provisão do Imposto de Renda,  calcular 15% sobre o LAIR e;
-Provisão Contribuição Social sobre o lucro liquido, calcular 9% sobre o LAIR;*/
-//Variavel para adicionar a função 4*/
+/*5º - Função: Provisão do Imposto de Renda,  calcular 15% sobre o LAIR e;*/
+//Variavel para adicionar a função 4
 let funcLair = [lair()];
-//Função5*/
+//Função5
 function provisaoIR(p1){
     p1 = funcLair / 100 * 15
     return p1
@@ -101,6 +108,8 @@ function provisaoIR(p1){
 console.log(provisaoIR())
 console.log(`O total da provisao do IR foi:  ${(provisaoIR())}`)
 
+
+/*Provisão Contribuição Social sobre o lucro liquido, calcular 9% sobre o LAIR;*/
 function provisaoCSLL(p2){
     p2 = funcLair / 100 * 9
     return p2
@@ -123,3 +132,14 @@ function LucroLiquido(LC){
 console.log(LucroLiquido())
 console.log(`O total do Lucro Liquido foi:  ${(LucroLiquido())}`)
 
+let lucLiq = [LucroLiquido()];
+
+let contas = {
+    provIR, 
+    provCSLL, 
+    funcLair,
+    funcao2,
+    funcao1,
+}
+
+console.log(contas)

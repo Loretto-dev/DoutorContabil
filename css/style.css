@@ -131,13 +131,13 @@ nav a:hover {
 
 }
 
-.periodicidade {
+#periodicidade {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color: #00ffb3;
 }
 
-.tituloLegislacao {
+#tituloLegislacao {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color: #00ffb3;
@@ -195,6 +195,12 @@ footer {
 /* PÁGINA 2 - DRE */
 
 .tituloDre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: #00ffb3;
+}
+
+#tituloDre {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color: #00ffb3;
@@ -290,3 +296,56 @@ footer {
     font-weight: bold;
 }
 
+/* página dre */
+
+.liquido input {
+    width: 1215px;
+    padding: 15px 0; /* Altera o espaço(espaçamento) de um elemento */
+    color: #3e474e; /* Muda a cor de um elemento(fonte) */
+    font-weight: bold; /* Coloca a fonte em um botão, (nesse caso Negrito) */
+    border: none; /* tira a borda de um elemento */
+    border-radius: 30px; /* Arredonda a borda */
+    transition: 1s all; /* Adiciona tempo para mudança de algum elemento */
+    cursor: pointer; /* Colocar mãozinha quando passa por cima */
+}
+
+.liquido input:hover {
+    width: 1220px;
+    padding: 15px 0; /* Altera o espaço(espaçamento) de um elemento */
+    color: #000000; /* Muda a cor de um elemento(fonte) */
+    font-weight: bold; /* Coloca a fonte em um botão, (nesse caso Negrito) */
+    border: none; /* tira a borda de um elemento */
+    border-radius: 30px; /* Arredonda a borda */
+    transition: 1s all; /* Adiciona tempo para mudança de algum elemento */
+    cursor: pointer; /* Colocar mãozinha quando passa por cima */
+    background: #0ad699;
+}
+
+#dreJs input {
+   width: 400px;
+   border-radius: 30px;
+   border: none;
+}
+
+#dreJs2 input {
+    width: 300px;
+    border-radius: 30px;
+    border: none;
+}
+
+#dreJs2 input:hover {
+    padding: 15px 0; /* Altera o espaço(espaçamento) de um elemento */
+    background: #6bccaf; /* Muda a cor de fundo de um elemento */
+    color: #3e474e; /* Muda a cor de um elemento(fonte) */
+    font-weight: bold; /* Coloca a fonte em um botão, (nesse caso Negrito) */
+    border: none; /* tira a borda de um elemento */
+    border-radius: 5px; /* Arredonda a borda */
+    transition: 1s all; /* Adiciona tempo para mudança de algum elemento */
+    cursor: pointer; /* Colocar mãozinha quando passa por cima */
+}
+
+.tabelaDre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    color: #ffffff;
+}

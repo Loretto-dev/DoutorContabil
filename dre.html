@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/validacao.js" defer></script>
     <title>DRE - Demonstrativo do Resultado do Exercicio</title>
 </head>
 <body>
@@ -35,38 +36,151 @@
         <section class="historia">
             <div>
                 <blockquote>
-                <h2 class="tituloDre"> O que é o lucro liquido? </h2>
+                    <h2 class="tituloDre"> O que é o lucro liquido? </h2>
 
-                    <p class="texto">O grande objetivo financeiro de todo o negócio é gerar resultado.
-                        Dessa forma, o lucro líquido é um indicador fundamental, tanto para a empresa 
-                        quanto para os investidores.
+                        <p class="texto">O grande objetivo financeiro de todo o negócio é gerar resultado.
+                            Dessa forma, o lucro líquido é um indicador fundamental, tanto para a empresa 
+                            quanto para os investidores.
 
-                        Afinal, é ele que financiará o desenvolvimento da organização. Além de remunerar
-                        os investidores, o resultado positivo proporcionará crescimento, por meio de 
-                        investimentos em pessoal, produtos e tecnologia.
+                            Afinal, é ele que financiará o desenvolvimento da organização. Além de remunerar
+                            os investidores, o resultado positivo proporcionará crescimento, por meio de 
+                            investimentos em pessoal, produtos e tecnologia.
 
-                        De maneira simplificada, o lucro líquido é a diferença entre todas as receitas da
-                        empresa e todos os gastos envolvidos para que ela funcione. Ou seja, é todo o recurso 
-                        que sobra depois de deduzidos os custos, despesas e impostos.
-                    </p>
-                <h3 class="tituloDre">Teste da Calculadora DRE </h3>
-                <p class="textoForm"> Agora que você ja sabe o que é lucro liquido, forneca abaixo 
-                os dados para fazer a DRE da sua empresa e descobrir o lucro liquido: </p>
+                            De maneira simplificada, o lucro líquido é a diferença entre todas as receitas da
+                            empresa e todos os gastos envolvidos para que ela funcione. Ou seja, é todo o recurso 
+                            que sobra depois de deduzidos os custos, despesas e impostos.
+                        </p>
+                    <h3 class="tituloDre">Teste da Calculadora DRE </h3>
+                    <p class="textoForm">Agora que você ja sabe o que é lucro liquido, forneca abaixo 
+                    os dados para fazer a DRE da sua empresa e descobrir o lucro liquido: </p>
                 </blockquote>
              </div>  
         </section>
 
-        <!-- INICIO DA SECTION  TESTE DE PARA JAVASCRIPT -->
-<!--         <section>
-            <form>
-                <p>Entre com seu endereço de email: </p>
-                <input id='email'>
-                <button type='submit' id='validate'>Enviar</button>
-                </form>
-                <h2 id='result'></h2>
-        </section> -->
-        <!-- FIM DA SECTION  TESTE DE PARA JAVASCRIPT -->
+        <section>
+            <blockquote>
+                <fieldset>
+                    <form id="dreJs" name="dreJs" action="#">
+                        <h3 class="tabelaDre"> Informe os Dados Financeiros da empresa no periodo: </h3>
+                        <!-- ***********Receitas****************** -->
+                        <h3> Receitas Financeiras do periodo: </h3>
+                        <label for="contas.receitaBruta" class="contas.receitaBruta">Informe a Receita Bruta de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.receitaBruta" name="contas.receitaBruta">
+                        <br>
+                        <br>
 
+                        <label for="contas.recFin" class="contas.recFin">Informe as Receitas Financeira de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.recFin" name="contas.recFin">
+                        <br>
+                        <br>
+                        <label for="contas.recNaoOp" class="contas.recNaoOp">Informe as Receitas Não Operacionais de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.recNaoOp" name="contas.recNaoOp">
+                        <br>
+                        <br>
+                        <!-- ***********Despesas****************** -->
+                        <h3> Despesas Financeiras do periodo: </h3>
+                        <label for="contas.devolucoes" class="contas.devolucoes">Informe o Valor de Devolucões de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.devolucoes" name="contas.devolucoes">
+                        <br>
+                        <br>
+                        <label for="contas.impostosSobreVenda" class="contas.impostosSobreVenda">Informe os Impostos Sobre a Venda de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.impostosSobreVenda" name="contas.impostosSobreVenda">
+                        <br>
+                        <br>
+                        <label for="contas.cmv" class="contas.cmv">Informe os Custo da mercadoria vendida de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.cmv" name="contas.cmv">
+                        <br>
+                        <br>
+                        <label for="contas.cpv" class="contas.cpv">Informe os Custos do produto vendido de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.cpv" name="contas.cpv">
+                        <br>
+                        <br>
+
+                        <label for="contas.csp" class="contas.csp">Informe o Custo do serviço prestado de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.csp" name="contas.csp">
+                        <br>
+                        <br>
+                        <label for="contas.despAdm" class="contas.despAdm">Informe as Despesas Administrativas de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.despAdm" name="contas.despAdm">
+                        <br>
+                        <br>
+                        <label for="contas.despCom" class="contas.despCom">Informe as Despesas Comerciais de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.despCom" name="contas.despCom">
+                        <br>
+                        <br>
+                        <label for="contas.despDep" class="contas.despDep">Informe as Despesas de Depreciação de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.despDep" name="contas.despDep">
+                        <br>
+                        <br>
+                        <label for="contas.despFin" class="contas.despFin">Informe as Despesas financeiras de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.despFin" name="contas.despFin">
+                        <br>
+                        <br>
+                        <label for="contas.despNaoOp" class="contas.despNaoOp">Informe as Despesas não Operacionais de sua empresa</label>
+                        <br>
+                        <input type="text" id="contas.despNaoOp" name="contas.despNaoOp">
+                        <br>
+                        <br>
+
+                    </form>
+                </fieldset>
+            </blockquote>
+            <blockquote>
+                <form id="dreJs2" name="dreJs2" action="#">
+
+                    <!-- *************Calculadoras*********** -->
+
+                    <input type="submit" value="Calcular Receita Liquida" id="formulas.receitaLiq" onclick="formulas.receitaLiq()">
+                    <input type="text" id="formulas.receitaLiq" name="formulas.receitaLiq">
+
+
+                    <input type="submit" value="Calcular Lucro Bruto" id="formulas.lucroBruto" onclick="formulas.lucroBruto()">
+                    <input type="text" id="formulas.lucroBruto" name="formulas.lucroBruto">
+                    <br>
+
+                    
+                    <input type="submit" value="Calcular Lucro/Prejuizo Operacional" id="formulas.lucPrejOp" onclick="formulas.lucPrejOp()">
+                    <input type="text" id="formulas.lucPrejOp" name="formulas.lucPrejOp">
+
+
+
+                    
+                    <input type="submit" value="Calcular Lucro antes do Imposto de Renda" id="formulas.lair" onclick="formulas.lair()">
+                    <input type="text" id="formulas.lair" name="formulas.lair">
+
+
+                    
+                    <input type="submit" value="Calcular Provisão do Imposto de Renda" id="formulas.provisaoIR" onclick="formulas.provisaoIR()">
+                    <input type="text" id="formulas.provisaoIR" name="formulas.provisaoIR">
+
+                    
+                    <input type="submit" value="Calcular Provisão Contribuição Social" id="formulas.provisaoCSLL" onclick="formulas.provisaoCSLL()">
+                    <input type="text" id="formulas.provisaoCSLL" name="formulas.provisaoCSLL">
+                    <br>
+                    <br>
+                </form>
+                    <div class="liquido">
+                        <input type="submit" value="Calcular Lucro Liquido" id="formulas.LucroLiquido" onclick="formulas.LucroLiquido()">
+                        <br>
+                        <br>
+                        <input type="text" id="formulas.LucroLiquido" name="formulas.LucroLiquido">
+                        <br>
+                    </div>
+
+            </blockquote>
+        </section>
         <section>
             <div class="titulo-social-media">
                 <a>Acesse minhas Redes Sociais</a>

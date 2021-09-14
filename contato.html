@@ -74,21 +74,11 @@
                 </ul>
             </div>
         </section>
-        <!-- INICIO DA SECTION  TESTE DE PARA JAVASCRIPT -->
-<!--         <section>
-            <form>
-                <p>Entre com seu endereço de email: </p>
-                <input id='email'>
-                <button type='submit' id='validate'>Enviar</button>
-                </form>
-                <h2 id='result'></h2>
-        </section> -->
-        <!-- FIM DA SECTION  TESTE DE PARA JAVASCRIPT -->
         <blockquote>
             <h3 class="tituloMapa"> Se preferir, solicite um orçamento:  </h3>
             <p class="textoForm"> Forneca abaixo os dados para solicitar um orçamento:  </p>
         </blockquote>
-        <section> <!-- INPUT de dados dos usuarios -->
+        <section>
             <blockquote>
             <form class="coletaDados">
                 <label for="nomesobrenome" class="titulo-input">Razão Social</label>
@@ -98,28 +88,33 @@
                 <input type="email" id="email" class="input-padrao"required placeholder="seuemail@dominio.com">
 
                 <label for="telefone" class="titulo-input">Telefone</label>
-                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
+                <input type="number" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
 
                 <label for="mensagem" class="titulo-input">Mensagem</label>
                 <textarea cols="71" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
                 <fieldset class="titulo-input">
                     <legend>Como prefere o nosso contato?</legend>
-                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                    <label for="radio-email">
+                        <input type="radio" name="contato" value="email" id="radio-email">Email</label>
                     
 
-                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    <label for="radio-telefone">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
                     
 
-                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
                 </fieldset>
                 <fieldset class="titulo-input">
                     <legend>Qual a categoria da sua empresa em relação ao seu porte?</legend>
                     <select>
-                        <option>MEI - faturamento anual até R$ 81 mil no ano</option>
-                        <option>Microempresa (ME) - Faturamento anual até R$ 360 mil por ano</option>
-                        <option>Empresa de Pequeno Porte (EPP) -  Faturamento anual até R$ 4,8 milhões por ano</option>
-                        <option>Empresas de médio porte e grande porte -  Faturamento anual acima R$ 4,8 milhões por ano</option>
+                        <optgroup label="Porte">
+                            <option>MEI - faturamento anual até R$ 81 mil no ano</option>
+                            <option>Microempresa (ME) - Faturamento anual até R$ 360 mil por ano</option>
+                            <option>Empresa de Pequeno Porte (EPP) -  Faturamento anual até R$ 4,8 milhões por ano</option>
+                            <option>Empresas de médio porte e grande porte -  Faturamento anual acima R$ 4,8 milhões por ano</option>
+                        </optgroup>
                     </select>
                 </fieldset>
                 <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
@@ -127,14 +122,10 @@
             </blockquote>
             <input type="submit" value="Enviar dados" class="enviar">
         </section>
-
-
-
         <section>
             <div class="titulo-social-media">
                 <a>Acesse minhas Redes Sociais</a>
             </div>
-
             <div class="redes-sociais">
                 <a href="https://github.com/Loretto-dev"><img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/128/github-icon.png"></a>
                 <a href="https://www.instagram.com/eliveltonalves/"><img src="https://cdn.icon-icons.com/icons2/1584/PNG/128/3721672-instagram_108066.png"></a>
@@ -148,5 +139,4 @@
         <p class="copyright">&copy; Copyright Loretto Empreendimentos - 2021</p>
     </footer>
 </body>
-<!-- <script src="js/validacao.js"></script> -->
 </html>
