@@ -63,121 +63,100 @@
                     <form id="dreJs" name="dreJs" action="#">
                         <h3 class="tabelaDre"> Informe os Dados Financeiros da empresa no periodo: </h3>
                         <!-- ***********Receitas****************** -->
-                        <h3> Receitas Financeiras do periodo: </h3>
-                        <label for="contas.receitaBruta" class="contas.receitaBruta">Informe a Receita Bruta de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.receitaBruta" name="contas.receitaBruta">
-                        <br>
-                        <br>
-
-                        <label for="contas.recFin" class="contas.recFin">Informe as Receitas Financeira de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.recFin" name="contas.recFin">
+                        <h3 id="tabelaF"> Receitas Financeiras do periodo: </h3>
+                        <label for="receitaBruta" class="receitaBruta">Informe a Receita Bruta do periodo: </label>
+                        <input type="text" id="contas-receitaBruta" name="contas-receitaBruta" placeholder="Receita Bruta">
                         <br>
                         <br>
-                        <label for="contas.recNaoOp" class="contas.recNaoOp">Informe as Receitas Não Operacionais de sua empresa</label>
+                        <label for="recFin" class="recFin">Informe as Receitas Financeira do periodo: </label>
+                        <input type="text" id="recFin" name="recFin" placeholder="Receita Financeira">
                         <br>
-                        <input type="text" id="contas.recNaoOp" name="contas.recNaoOp">
+                        <br>
+                        <label for="recNaoOp" class="recNaoOp">Informe as Receitas Não Operacionais do periodo: </label>
+                        <input type="text" id="recNaoOp" name="recNaoOp" placeholder="Receita Não Operacional">
                         <br>
                         <br>
                         <!-- ***********Despesas****************** -->
-                        <h3> Despesas Financeiras do periodo: </h3>
-                        <label for="contas.devolucoes" class="contas.devolucoes">Informe o Valor de Devolucões de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.devolucoes" name="contas.devolucoes">
-                        <br>
-                        <br>
-                        <label for="contas.impostosSobreVenda" class="contas.impostosSobreVenda">Informe os Impostos Sobre a Venda de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.impostosSobreVenda" name="contas.impostosSobreVenda">
+                        <h3 id="tabelaF"> Despesas Financeiras do periodo: </h3>
+                        <label for="devolucoes" class="devolucoes">Informe o Valor de Devolucões do periodo: </label>
+                        <input type="text" id="devolucoes" name="devolucoes" placeholder="Valor de Devolucões">
                         <br>
                         <br>
-                        <label for="contas.cmv" class="contas.cmv">Informe os Custo da mercadoria vendida de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.cmv" name="contas.cmv">
-                        <br>
-                        <br>
-                        <label for="contas.cpv" class="contas.cpv">Informe os Custos do produto vendido de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.cpv" name="contas.cpv">
+                        <label for="impostosSobreVenda" class="impostosSobreVenda">Informe os Impostos Sobre a Venda do periodo: </label>
+                        <input type="text" id="impostosSobreVenda" name="impostosSobreVenda" placeholder="Impostos Sobre a Venda">
                         <br>
                         <br>
-
-                        <label for="contas.csp" class="contas.csp">Informe o Custo do serviço prestado de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.csp" name="contas.csp">
+                        <label for=".cmv" class="cmv">Informe os Custo da mercadoria vendida do periodo: </label>
+                        <input type="text" id="cmv" name="cmv" placeholder="Custo da mercadoria vendida">
                         <br>
                         <br>
-                        <label for="contas.despAdm" class="contas.despAdm">Informe as Despesas Administrativas de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.despAdm" name="contas.despAdm">
-                        <br>
-                        <br>
-                        <label for="contas.despCom" class="contas.despCom">Informe as Despesas Comerciais de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.despCom" name="contas.despCom">
+                        <label for="cpv" class="cpv">Informe os Custos do produto vendido do periodo: </label>
+                        <input type="text" id="cpv" name="cpv"placeholder="Custos do produto vendido">
                         <br>
                         <br>
-                        <label for="contas.despDep" class="contas.despDep">Informe as Despesas de Depreciação de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.despDep" name="contas.despDep">
-                        <br>
-                        <br>
-                        <label for="contas.despFin" class="contas.despFin">Informe as Despesas financeiras de sua empresa</label>
-                        <br>
-                        <input type="text" id="contas.despFin" name="contas.despFin">
+                        <label for="csp" class="csp">Informe o Custo do serviço prestado do periodo: </label>
+                        <input type="text" id="csp" name="csp"placeholder="Custo do serviço prestado">
                         <br>
                         <br>
-                        <label for="contas.despNaoOp" class="contas.despNaoOp">Informe as Despesas não Operacionais de sua empresa</label>
+                        <label for="despAdm" class="despAdm">Informe as Despesas Administrativas do periodo: </label>
+                        <input type="text" id="despAdm" name="despAdm" placeholder="Despesas Administrativas">
                         <br>
-                        <input type="text" id="contas.despNaoOp" name="contas.despNaoOp">
+                        <br>
+                        <label for="despCom" class="despCom">Informe as Despesas Comerciais do periodo: </label>
+                        <input type="text" id="despCom" name="despCom" placeholder="Despesas Comerciais">
                         <br>
                         <br>
-
+                        <label for="despDep" class="despDep">Informe as Despesas de Depreciação do periodo: </label>
+                        <input type="text" id="despDep" name="despDep" placeholder="Despesas de Depreciação">
+                        <br>
+                        <br>
+                        <label for="despFin" class="despFin">Informe as Despesas financeiras do periodo: </label>
+                        <input type="text" id="despFin" name="despFin" placeholder="Despesas financeiras">
+                        <br>
+                        <br>
+                        <label for="despNaoOp" class="despNaoOp">Informe as Despesas não Operacionais do periodo: </label>
+                        <input type="text" id="despNaoOp" name="despNaoOp" placeholder="Despesas não Operacionais">
+                        <br>
+                        <br>
+                        <input type="submit" id="send" value="Enviar">
                     </form>
                 </fieldset>
             </blockquote>
             <blockquote>
+            <fieldset>
                 <form id="dreJs2" name="dreJs2" action="#">
-
+                    <div class="liquido">
                     <!-- *************Calculadoras*********** -->
 
-                    <input type="submit" value="Calcular Receita Liquida" id="formulas.receitaLiq" onclick="formulas.receitaLiq()">
-                    <input type="text" id="formulas.receitaLiq" name="formulas.receitaLiq">
-
-
-                    <input type="submit" value="Calcular Lucro Bruto" id="formulas.lucroBruto" onclick="formulas.lucroBruto()">
-                    <input type="text" id="formulas.lucroBruto" name="formulas.lucroBruto">
-                    <br>
-
-                    
-                    <input type="submit" value="Calcular Lucro/Prejuizo Operacional" id="formulas.lucPrejOp" onclick="formulas.lucPrejOp()">
-                    <input type="text" id="formulas.lucPrejOp" name="formulas.lucPrejOp">
-
-
-
-                    
-                    <input type="submit" value="Calcular Lucro antes do Imposto de Renda" id="formulas.lair" onclick="formulas.lair()">
-                    <input type="text" id="formulas.lair" name="formulas.lair">
-
-
-                    
-                    <input type="submit" value="Calcular Provisão do Imposto de Renda" id="formulas.provisaoIR" onclick="formulas.provisaoIR()">
-                    <input type="text" id="formulas.provisaoIR" name="formulas.provisaoIR">
-
-                    
-                    <input type="submit" value="Calcular Provisão Contribuição Social" id="formulas.provisaoCSLL" onclick="formulas.provisaoCSLL()">
-                    <input type="text" id="formulas.provisaoCSLL" name="formulas.provisaoCSLL">
-                    <br>
-                    <br>
-                </form>
-                    <div class="liquido">
-                        <input type="submit" value="Calcular Lucro Liquido" id="formulas.LucroLiquido" onclick="formulas.LucroLiquido()">
+                        <input type="submit" value="Calcular Receita Liquida" id="funcao1"> 
+                        <input type="text" id="funcaoR" name="despNaoOp" placeholder="      Total Despesas não Operacionais">
                         <br>
                         <br>
-                        <input type="text" id="formulas.LucroLiquido" name="formulas.LucroLiquido">
+                        <input type="submit" value="Calcular Lucro Bruto" id="funcao2"> 
+                        <input type="text" id="funcaoR" name="despNaoOp" placeholder="      Total Lucro Bruto">
                         <br>
+                        <br>
+                        <input type="submit" value="Calcular Lucro/Prejuizo Operacional" id="funcao3"> 
+                        <input type="text" id="funcaoR" name="despNaoOp" placeholder="      Total Lucro/Prejuizo Operacional">
+                        <br>
+                        <br>
+                        <input type="submit" value="Calcular Lucro antes do Imposto de Renda" id="funcao4"> 
+                        <input type="text" id="funcaoR" name="despNaoOp" placeholder="      Total Lucro antes do Imposto de Renda">
+                        <br>
+                        <br>
+                        <input type="submit" value="Calcular Provisão do Imposto de Renda" id="funcao5"> 
+                        <input type="text" id="funcaoR" name="despNaoOp" placeholder="      Total Provisão do Imposto de Renda">
+                        <br>
+                        <br>
+                        <input type="submit" value="Calcular Provisão Contribuição Social" id="funcao6"> 
+                        <input type="text" id="funcaoR" name="despNaoOp" placeholder="      Total Provisão Contribuição Social">
+                        <br>
+                        <br>
+                        <input type="submit" value="Calcular Lucro Liquido" id="funcao7"> 
+                        <input type="text" id="funcaoR" name="despNaoOp" placeholder="      Total Lucro Liquido">
                     </div>
+                </form>
+            </fieldset>
 
             </blockquote>
         </section>

@@ -322,26 +322,26 @@ footer {
 }
 
 #dreJs input {
-   width: 400px;
+   width: 600px;
+   padding: 5px;
    border-radius: 30px;
    border: none;
+   margin-left: 10px ;
 }
 
+
+
 #dreJs2 input {
+    padding: 10px;
     width: 300px;
-    border-radius: 30px;
+    border-radius: 1px;
     border: none;
 }
 
-#dreJs2 input:hover {
-    padding: 15px 0; /* Altera o espaço(espaçamento) de um elemento */
-    background: #6bccaf; /* Muda a cor de fundo de um elemento */
-    color: #3e474e; /* Muda a cor de um elemento(fonte) */
-    font-weight: bold; /* Coloca a fonte em um botão, (nesse caso Negrito) */
-    border: none; /* tira a borda de um elemento */
-    border-radius: 5px; /* Arredonda a borda */
-    transition: 1s all; /* Adiciona tempo para mudança de algum elemento */
-    cursor: pointer; /* Colocar mãozinha quando passa por cima */
+
+
+#funcaoR {
+    border-radius: 0px;
 }
 
 .tabelaDre {
@@ -349,3 +349,25 @@ footer {
     font-size: 35px;
     color: #ffffff;
 }
+
+#send {
+    padding: 20px;
+}
+
+#send:hover {
+    padding: 10px;
+    background: #6bccaf; /* Muda a cor de fundo de um elemento */
+    color: #3e474e; /* Muda a cor de um elemento(fonte) */
+    font-weight: bold; /* Coloca a fonte em um botão, (nesse caso Negrito) */
+    font-size: 20px;
+    border: none; /* tira a borda de um elemento */
+    border-radius: 50px; /* Arredonda a borda */
+    transition: 1s all; /* Adiciona tempo para mudança de algum elemento */
+    cursor: pointer; /* Colocar mãozinha quando passa por cima */
+}
+
+#tabelaF {
+    color: #6bccaf; /* Muda a cor de fundo de um elemento */
+    font-size: 25px;
+}
+

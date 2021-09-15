@@ -1,35 +1,64 @@
 //DRE - Demonstração dos resultados do exercicio - Podendo ser feita no periodo de 1 mês, 1 trimestre, 1 semestre ou 1 ano//
 
-let contas = {
-        //Receita Operacional Bruta - Faturamento total da empresa no periodo
-        receitaBruta: 200000,
-        //Devoluções do periodo;
-        devolucoes: -2000,
-        //Devoluções pagos no periodo;
-        impostosSobreVenda: -5000,
-        //Custo mercadoria vendida;
-        cmv: -10000,
-        //Custo produto vendido;
-        cpv: -15000,
-        //Custo serviço prestado;
-        csp: -4000,
-        //Despesas Administrativas - Gastos com o departamento administrativo;
-        despAdm: -25000,
-        //Despesas Comerciais - Gastos com o departamento comercial, departamento de vendas;
-        despCom: -40000,
-        //Despesas de Depreciação - Equipamentos e maquinas quebrados, obsoletos;
-        despDep: -3000,
-        //Despesas financeiras - Taxas de emprestimos;
-        despFin: -6000,
-        //Despesas não Operacionais - Gastos que não te relação com a operação EX: gastos de reforma de imoveis;
-        despNaoOp: -1000,
-        //Receitas Financeira - Investimentos em ações, aluguel de algum bem, ou seja, dinheiro que rende;
-        recFin: 30000,
-        //Receita Não Operacionais - São receitas não relacionadas com a operação. EX: lucro do aluguem de imoveis;
-        recNaoOp: 20000,
-}
 
+const btn = document.querySelector("#send");
 
+btn.addEventListener("click",function(e){
+
+    e.preventDefault();
+
+    const receitaBruta = document.querySelector("#contas-receitaBruta",);
+    const recFin = document.querySelector("#recFin",);
+    const recNaoOp = document.querySelector("#recNaoOp",);
+    const devolucoes = document.querySelector("#devolucoes",);
+    const impostosSobreVenda = document.querySelector("#impostosSobreVenda",);
+    const cmv = document.querySelector("#cmv",);
+    const cpv = document.querySelector("#cpv",);
+    const csp = document.querySelector("#csp",);
+    const despAdm = document.querySelector("#despAdm",);
+    const despCom = document.querySelector("#despCom",);
+    const despDep = document.querySelector("#despDep",);
+    const despFin = document.querySelector("#despFin",);
+    const despNaoOp = document.querySelector("#despNaoOp",);
+
+    const dados = [
+        receitaBruta.value, 
+        recFin.value, 
+        recNaoOp.value, 
+        devolucoes.value, 
+        impostosSobreVenda.value,
+        cmv.value,
+        cpv.value,
+        csp.value,
+        despAdm.value,
+        despCom.value,
+        despDep.value,
+        despFin.value,
+        despNaoOp.value,
+    ]
+
+    console.log(dados);
+})
+
+//Botão Calcula Receita Liquida
+
+const funcao1 = document.querySelector("#funcao1");
+
+funcao1.addEventListener("click",function(e){
+
+    e.preventDefault();
+
+    const receitaLiqF = function(liqReceita){
+        return liqReceita = btn.dados[0] + btn.dados[3] + btn.dados[4];
+    }
+    const receitaLiquida = receitaLiqF().value;
+
+    alert(receitaLiquida)
+
+});
+
+/**************************************************************************/
+/* 
 let formulas = {
     //1º - Fução para saber a receita liquida
     receitaLiq: function(liqReceita){
@@ -65,12 +94,12 @@ let formulas = {
         let resulImp = formulas.provisaoIR() + formulas.provisaoCSLL()
         return LC = formulas.lair() - resulImp
     },
-}
-
-console.log(`A receita liquida do periodo foi: ${formulas.receitaLiq()}`)
-console.log(`O lucro bruto do periodo foi: ${formulas.lucroBruto()}`)
-console.log(`O lucro/prejuizo operacional do periodo foi: ${formulas.lucPrejOp()}`)
-console.log(`O L.A.I.R - Lucro antes do Imposto de Renda do periodo foi: ${formulas.lair()}`)
-console.log(`A Provisão do Imposto de Renda do periodo foi: ${formulas.provisaoIR()}`)
-console.log(`A Provisão da Contribuição Social do periodo foi: ${formulas.provisaoCSLL()}`)
-console.log(`O Lucro Liquido do periodo foi: ${formulas.LucroLiquido()}`)
+    }
+    
+    console.log(`A receita liquida do periodo foi: ${formulas.receitaLiq()}`)
+    console.log(`O lucro bruto do periodo foi: ${formulas.lucroBruto()}`)
+    console.log(`O lucro/prejuizo operacional do periodo foi: ${formulas.lucPrejOp()}`)
+    console.log(`O L.A.I.R - Lucro antes do Imposto de Renda do periodo foi: ${formulas.lair()}`)
+    console.log(`A Provisão do Imposto de Renda do periodo foi: ${formulas.provisaoIR()}`)
+    console.log(`A Provisão da Contribuição Social do periodo foi: ${formulas.provisaoCSLL()}`)
+    console.log(`O Lucro Liquido do periodo foi: ${formulas.LucroLiquido()}`) */
