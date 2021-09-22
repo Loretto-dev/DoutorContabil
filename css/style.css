@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
 body{
     background-color: #141b21;
 }
@@ -30,8 +31,6 @@ nav a:hover {
     font-size: 31px;
 }
 .pagina_inicial{
-    position: absolute;
-    top: 100px;
     right: 0;
     font-family: 'Kanit';
     margin: 0 519px 0 30px;
@@ -43,8 +42,6 @@ nav a:hover {
 
 }
 .inicioDre {
-    position: absolute;
-    top: 150px;
     right: 0;
     font-family: 'Kanit';
     margin: 0 385px 0 30px;
@@ -55,8 +52,6 @@ nav a:hover {
     text-decoration: none;
 }
 .inicioLegislacao {
-    position: absolute;
-    top: 200px;
     right: 0;
     font-family: 'Kanit';
     margin: 0 400px 0 30px;
@@ -69,8 +64,6 @@ nav a:hover {
 
 
 .inicioPeriodicidade {
-    position: absolute;
-    top: 250px;
     right: 0;
     font-family: 'Kanit';
     margin: 0 366px 0 30px;
@@ -82,8 +75,6 @@ nav a:hover {
 }
 
 .paginaDre {
-    position: absolute;
-    top: 300px;
     right: 0;
     font-family: 'Kanit';
     margin: 0 70px 0 30px;
@@ -95,8 +86,6 @@ nav a:hover {
 }
 
 .paginaContato {
-    position: absolute;
-    top: 350px;
     right: 0;
     font-family: 'Kanit';
     margin: 0 472px 0 30px;
@@ -371,3 +360,167 @@ footer {
     font-size: 25px;
 }
 
+
+
+/********************* CÓDIGOS THIAGO ********************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+.video-responsivo {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+
+.video-responsivo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  footer, .copyright, .titulo-social-media {
+    margin: 0px auto;
+}
+
+.titulo-social-media {
+    margin-top: 20px;
+}
+
+
+#tituloDre, #tituloLegislacao, #periodicidade {
+    font-size: 30px;
+}
+
+
+.inicioPeriodicidade {
+    margin: 0px;
+}
+
+header h1 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}
+
+nav {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0px 40px;
+}
+
+
+
+nav ul a, nav a {
+    position: relative!important;
+    top: none!important;
+    display: inline-block;
+    width: 100%;
+    margin: 0!important;
+}
+
+footer {
+    width: 100%;
+    text-align: center;    
+}
+.titulo-social-media {
+    position: relative;
+    text-align: center;
+}
+
+.video-max-width {
+    max-width: 85%;
+}
+
+.titulo-social-media {
+    margin-bottom: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.redes-sociais img {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+
+.copyright {
+    position: relative;
+    display: block-inline;
+    width: 100%;
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+
+.imgMenu {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+
+
+
+
+
+/********************* MEDIA QUERIES *****************/
+
+
+@media (min-width: 700px) { 
+    
+    header h1, nav {
+        width: 50%;
+    } 
+
+    #tituloDre, #tituloLegislacao, #periodicidade {
+        font-size: 50px;
+    }
+
+    nav {
+        padding-top: 35px;
+    }
+
+    p {
+        font-size: 21px;
+    }
+
+    .corpo {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .corpo img {
+        display: block; 
+        margin: 0 auto;
+    }
+
+    .video-max-width {
+        margin:  0 auto;
+    }
+
+}

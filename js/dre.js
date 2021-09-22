@@ -1,125 +1,105 @@
 //DRE - Demonstração dos resultados do exercicio - Podendo ser feita no periodo de 1 mês, 1 trimestre, 1 semestre ou 1 ano//
 
-//Receita Operacional Bruta - Faturamento total da empresa no periodo
-let receitaBruta = 100000;
 
+const btn = document.querySelector("#send");
 
-//***********Despesas******************/
-//Devoluções do periodo;
-let devolucoes = 1000;
-//Devoluções pagos no periodo;
-let impostosSobreVenda = 19000;
-//Custo mercadoria vendida;
-let cmv = 15000;
-//Custo produto vendido;
-let cpv = 15000;
-//Custo serviço prestado;
-let csp = 10000;
-//Despesas Administrativas - Gastos com o departamento administrativo;
-let despAdm = 10000;
-//Despesas Comerciais - Gastos com o departamento comercial, departamento de vendas;
-let despCom = 5000;
-//Despesas de Depreciação - Equipamentos e maquinas quebrados, obsoletos;
-let despDep = 2000;
-//Despesas financeiras - Taxas de emprestimos;
-let despFin = 1000;
-//Despesas não Operacionais - Gastos que não te relação com a operação EX: gastos de reforma de imoveis;
-let despNaoOp = 10000;
+btn.addEventListener("click",function(e){
 
+    e.preventDefault();
 
-//***********Receitas******************/
-//Receitas Financeira - Investimentos em ações, aluguel de algum bem, ou seja, dinheiro que rende;
-let recFin = 3000;
-//Receita Não Operacionais - São receitas não relacionadas com a operação. EX: lucro do aluguem de imoveis;
-let recNaoOp = 15000;
+    const receitaBruta = document.querySelector("#contas-receitaBruta",);
+    const recFin = document.querySelector("#recFin",);
+    const recNaoOp = document.querySelector("#recNaoOp",);
+    const devolucoes = document.querySelector("#devolucoes",);
+    const impostosSobreVenda = document.querySelector("#impostosSobreVenda",);
+    const cmv = document.querySelector("#cmv",);
+    const cpv = document.querySelector("#cpv",);
+    const csp = document.querySelector("#csp",);
+    const despAdm = document.querySelector("#despAdm",);
+    const despCom = document.querySelector("#despCom",);
+    const despDep = document.querySelector("#despDep",);
+    const despFin = document.querySelector("#despFin",);
+    const despNaoOp = document.querySelector("#despNaoOp",);
 
+    const dados = [
+        receitaBruta.value, 
+        recFin.value, 
+        recNaoOp.value, 
+        devolucoes.value, 
+        impostosSobreVenda.value,
+        cmv.value,
+        cpv.value,
+        csp.value,
+        despAdm.value,
+        despCom.value,
+        despDep.value,
+        despFin.value,
+        despNaoOp.value,
+    ]
 
+    console.log(dados);
+})
 
-/*******************************Funções DRE***********************************/
+//Botão Calcula Receita Liquida
 
-//1º - Fução para saber a receita liquida
-function receitaLiq(liqReceita){
-    return liqReceita = receitaBruta - (devolucoes + impostosSobreVenda);
-}
-console.log(receitaLiq());
-console.log(`O total da Receita Liquida foi:  ${receitaLiq()}`)
+const funcao1 = document.querySelector("#funcao1");
 
+funcao1.addEventListener("click",function(e){
 
+    e.preventDefault();
 
+    const receitaLiqF = function(liqReceita){
+        return liqReceita = btn.dados[0] + btn.dados[3] + btn.dados[4];
+    }
+    const receitaLiquida = receitaLiqF().value;
 
-//2º - Função para saber lucro bruto
-//Variavel para adicionar a função 1
-let funcao1 = [receitaLiq()];
-//Função2
-function lucroBruto(lucBruto){
-    let custosProd = cmv + cpv + csp;
-    return lucBruto =  funcao1 - custosProd;
-}
-console.log(lucroBruto())
-console.log(`O total do Lucro Bruto foi:  ${lucroBruto()}`)
+    alert(receitaLiquida)
 
+});
 
-
-//3º - Fução para saber lucro/prejuizo operacional
-//Variavel para adicionar a função 2
-let funcao2 = [lucroBruto()];
-//Função3
-function lucPrejOp(lucPre){
-    let custosProd = (despDep + despAdm + despCom + despFin) - recFin;
-    return lucPre = funcao2 - custosProd;
-}
-console.log(lucPrejOp())
-console.log(`O total do lucro/prejuizo operacional foi:  ${lucPrejOp()}`)
-
-
-
-
-
-//4º - Função para saber o L.A.I.R - Lucro antes do Imposto de Renda;
-//Variavel para adicionar a função 3
-let funcao3 = [lucPrejOp()];
-//Função4
-function lair(LucIP){
-    let antesIP = recNaoOp - despNaoOp;
-    return LucIP = funcao3 - antesIP;
-}
-console.log(lair())
-console.log(`O total do LAIR - Lucro antes do Imposto de Renda foi:  ${lair()}`)
-
-
-
-
-/*5º - Função: Provisão do Imposto de Renda,  calcular 15% sobre o LAIR e;
-Provisão Contribuição Social sobre o lucro liquido, calcular 9% sobre o LAIR;*/
-//Variavel para adicionar a função 4*/
-let funcLair = [lair()];
-//Função5*/
-function provisaoIR(p1){
-    p1 = funcLair / 100 * 15
-    return p1
-}
-console.log(provisaoIR())
-console.log(`O total da provisao do IR foi:  ${(provisaoIR())}`)
-
-function provisaoCSLL(p2){
-    p2 = funcLair / 100 * 9
-    return p2
-}
-console.log(provisaoCSLL())
-console.log(`O total da provisao do CSLL foi:  ${(provisaoCSLL())}`)
-
-
-
-
-//6º - Função para saber o Lucro Liquido
-//Variavel para adicionar a função 5
-let provIR = [provisaoIR()]
-let provCSLL = [provisaoCSLL()]
-//Função6
-function LucroLiquido(LC){
+/**************************************************************************/
+/* 
+let formulas = {
+    //1º - Fução para saber a receita liquida
+    receitaLiq: function(liqReceita){
+        return liqReceita = contas.receitaBruta + contas.devolucoes + contas.impostosSobreVenda;
+    },
+    //2º - Função para saber lucro bruto
+    lucroBruto: function(lucBruto){
+        let custosProd = contas.cmv + contas.cpv + contas.csp;
+        return lucBruto =  formulas.receitaLiq() + custosProd;
+    },
+    //3º - Fução para saber lucro/prejuizo operacional
+    lucPrejOp: function(lucPre){
+        let custosProd = contas.despDep + contas.despAdm + contas.despCom + contas.despFin + contas.recFin;
+        return lucPre = formulas.lucroBruto() + custosProd;
+    },
+    //4º - Função para saber o L.A.I.R - Lucro antes do Imposto de Renda;
+    lair: function(LucIP){
+        let antesIP = contas.recNaoOp + contas.despNaoOp;
+        return LucIP = formulas.lucPrejOp() + antesIP;
+    },
+    //5º - Função: Provisão do Imposto de Renda,  calcular 15% sobre o LAIR e;
+    provisaoIR: function(p1){
+        p1 = formulas.lair() / 100 * 15
+        return p1
+    },
+    ///6º - Função:Provisão Contribuição Social sobre o lucro liquido, calcular 9% sobre o LAIR;
+    provisaoCSLL: function(p2){
+        p2 = formulas.lair() / 100 * 9
+        return p2
+    },
+    //7º - Função para saber o Lucro Liquido
+    LucroLiquido: function(LC){
+        let resulImp = formulas.provisaoIR() + formulas.provisaoCSLL()
+        return LC = formulas.lair() - resulImp
+    },
+    }
     
-    return LC = funcLair - (provIR - provCSLL)
-}
-console.log(LucroLiquido())
-console.log(`O total do Lucro Liquido foi:  ${(LucroLiquido())}`)
-
+    console.log(`A receita liquida do periodo foi: ${formulas.receitaLiq()}`)
+    console.log(`O lucro bruto do periodo foi: ${formulas.lucroBruto()}`)
+    console.log(`O lucro/prejuizo operacional do periodo foi: ${formulas.lucPrejOp()}`)
+    console.log(`O L.A.I.R - Lucro antes do Imposto de Renda do periodo foi: ${formulas.lair()}`)
+    console.log(`A Provisão do Imposto de Renda do periodo foi: ${formulas.provisaoIR()}`)
+    console.log(`A Provisão da Contribuição Social do periodo foi: ${formulas.provisaoCSLL()}`)
+    console.log(`O Lucro Liquido do periodo foi: ${formulas.LucroLiquido()}`) */
