@@ -1,11 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 
+/*Menu das páginas*/
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: #141b21;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-color: #141b21;
+}
+
+header nav a {
+    font-family: 'Kanit';
+    margin: 0 100px 0 30px;
+    text-transform: uppercase;
+    color: #3e474e;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #28b78d;
+    font-size: 31px;
 }
 
 .imgMenu {
@@ -16,20 +38,6 @@ header {
     margin: 0px;
 }
 
-nav a {
-    font-family: 'Kanit';
-    margin: 0 100px 0 30px;
-    text-transform: uppercase;
-    color: #3e474e;
-    font-weight: bold;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #28b78d;
-    font-size: 31px;
-}
 .pagina_inicial{
     right: 0;
     font-family: 'Kanit';
@@ -39,8 +47,8 @@ nav a:hover {
     font-weight: bold;
     font-size: 30px;
     text-decoration: none;
-
 }
+
 .inicioDre {
     right: 0;
     font-family: 'Kanit';
@@ -51,6 +59,7 @@ nav a:hover {
     font-size: 30px;
     text-decoration: none;
 }
+
 .inicioLegislacao {
     right: 0;
     font-family: 'Kanit';
@@ -61,7 +70,6 @@ nav a:hover {
     font-size: 30px;
     text-decoration: none;
 }
-
 
 .inicioPeriodicidade {
     right: 0;
@@ -96,12 +104,7 @@ nav a:hover {
     text-decoration: none;
 }
 
-.imgDre {
-    border: 0px;
-    padding: 0px;
-    margin: 0px;
-
-}
+/*Página Index*/
 
 .corpo {
     padding: 20px 0;
@@ -117,7 +120,6 @@ nav a:hover {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color: #00ffb3;
-
 }
 
 #periodicidade {
@@ -154,6 +156,20 @@ nav a:hover {
     margin: 0 0 0 25px;
 }
 
+.video-responsivo {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-responsivo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .titulo-social-media {
     margin: 40px 0 0 530px;
     position: absolute;
@@ -165,7 +181,6 @@ nav a:hover {
     width: 60px;
     height: 60px;
     margin: 150px 0 0 200px;
-
 }
 
 footer {
@@ -201,22 +216,22 @@ footer {
 
 .enviar{ /* Botão Enviar */
 
-    width: 40%; /* Altera as dimensões de um elemento(seja texto ou um botão) */
-    padding: 15px 0; /* Altera o espaço(espaçamento) de um elemento */
-    background: #bfe4d9; /* Muda a cor de fundo de um elemento */
-    color: #3e474e; /* Muda a cor de um elemento(fonte) */
-    font-weight: bold; /* Coloca a fonte em um botão, (nesse caso Negrito) */
-    font-size: 20px; /* Altera o tamanho de uma fonte */
-    border: none; /* tira a borda de um elemento */
-    border-radius: 5px; /* Arredonda a borda */
-    transition: 1s all; /* Adiciona tempo para mudança de algum elemento */
-    cursor: pointer; /* Colocar mãozinha quando passa por cima */
+    width: 40%; 
+    padding: 15px 0; 
+    background: #bfe4d9;
+    color: #3e474e; 
+    font-weight: bold; 
+    font-size: 20px;
+    border: none; 
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
     margin: 0 60px;
 }
 
-.enviar:hover {/* Botão Enviar */  /* Comando HOVER é para alterarmos um elemento quando é passado o mouse por cima */
+.enviar:hover {
     background: #28b78d;
-    transform: scale(1.2); /* O 'transform' altera todo o elemento nesse caso, aumentamos o botao enviar em 20%*/
+    transform: scale(1.2);
 }
 
 .titulo-input {
@@ -237,16 +252,17 @@ footer {
     margin: 20px 10px;
 }
 
-/* Guia contato */
+/* Página contato */
+
 .Contatos {
-    width: 1280px;
+    width: 70rem;
     margin: 0 40px ;
     padding: 0px 0;
 }
 
 .Contatos img {
-    width: 100px;
-    padding: 0px 0;
+    width: 9rem;
+    display: inline-block;
 }
 
 .Contatos li {
@@ -291,22 +307,22 @@ footer {
     width: 1215px;
     padding: 15px 0; /* Altera o espaço(espaçamento) de um elemento */
     color: #3e474e; /* Muda a cor de um elemento(fonte) */
-    font-weight: bold; /* Coloca a fonte em um botão, (nesse caso Negrito) */
+    font-weight: bold; 
     border: none; /* tira a borda de um elemento */
-    border-radius: 30px; /* Arredonda a borda */
-    transition: 1s all; /* Adiciona tempo para mudança de algum elemento */
-    cursor: pointer; /* Colocar mãozinha quando passa por cima */
+    border-radius: 30px;
+    transition: 1s all;
+    cursor: pointer;
 }
 
 .liquido input:hover {
     width: 1220px;
     padding: 15px 0; /* Altera o espaço(espaçamento) de um elemento */
     color: #000000; /* Muda a cor de um elemento(fonte) */
-    font-weight: bold; /* Coloca a fonte em um botão, (nesse caso Negrito) */
+    font-weight: bold; 
     border: none; /* tira a borda de um elemento */
-    border-radius: 30px; /* Arredonda a borda */
-    transition: 1s all; /* Adiciona tempo para mudança de algum elemento */
-    cursor: pointer; /* Colocar mãozinha quando passa por cima */
+    border-radius: 30px;
+    transition: 1s all;
+    cursor: pointer;
     background: #0ad699;
 }
 
@@ -347,12 +363,12 @@ footer {
     padding: 10px;
     background: #6bccaf; /* Muda a cor de fundo de um elemento */
     color: #3e474e; /* Muda a cor de um elemento(fonte) */
-    font-weight: bold; /* Coloca a fonte em um botão, (nesse caso Negrito) */
+    font-weight: bold; 
     font-size: 20px;
     border: none; /* tira a borda de um elemento */
-    border-radius: 50px; /* Arredonda a borda */
-    transition: 1s all; /* Adiciona tempo para mudança de algum elemento */
-    cursor: pointer; /* Colocar mãozinha quando passa por cima */
+    border-radius: 50px;
+    transition: 1s all;
+    cursor: pointer;
 }
 
 #tabelaF {
@@ -364,38 +380,7 @@ footer {
 
 /********************* CÓDIGOS THIAGO ********************/
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-img {
-    max-width: 100%;
-}
-
-.video-responsivo {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-}
-
-
-.video-responsivo iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-
-  footer, .copyright, .titulo-social-media {
+footer, .copyright, .titulo-social-media {
     margin: 0px auto;
 }
 
@@ -427,8 +412,6 @@ nav {
     height: auto;
     padding: 0px 40px;
 }
-
-
 
 nav ul a, nav a {
     position: relative!important;
@@ -484,19 +467,15 @@ footer {
 
 
 
-
-
-
 /********************* MEDIA QUERIES *****************/
 
-
-@media (min-width: 700px) { 
+@media (min-width: 900px) { 
     
     header h1, nav {
         width: 50%;
     } 
 
-    #tituloDre, #tituloLegislacao, #periodicidade {
+    #tituloDre, #tabelaDre, #tituloLegislacao, #periodicidade {
         font-size: 50px;
     }
 
@@ -519,8 +498,10 @@ footer {
         margin: 0 auto;
     }
 
-    .video-max-width {
+    .video-max-width{
         margin:  0 auto;
     }
-
+    .Contatos{
+        width: auto;
+    }
 }

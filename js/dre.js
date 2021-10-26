@@ -26,7 +26,6 @@ let despFin = 1000;
 //Despesas não Operacionais - Gastos que não te relação com a operação EX: gastos de reforma de imoveis;
 let despNaoOp = 10000;
 
-
 //***********Receitas******************/
 //Receitas Financeira - Investimentos em ações, aluguel de algum bem, ou seja, dinheiro que rende;
 let recFin = 3000;
@@ -45,8 +44,6 @@ console.log(receitaLiq());
 console.log(`O total da Receita Liquida foi:  ${receitaLiq()}`)
 
 
-
-
 //2º - Função para saber lucro bruto
 //Variavel para adicionar a função 1
 let funcao1 = [receitaLiq()];
@@ -57,7 +54,6 @@ function lucroBruto(lucBruto){
 }
 console.log(lucroBruto())
 console.log(`O total do Lucro Bruto foi:  ${lucroBruto()}`)
-
 
 
 //3º - Fução para saber lucro/prejuizo operacional
@@ -72,9 +68,6 @@ console.log(lucPrejOp())
 console.log(`O total do lucro/prejuizo operacional foi:  ${lucPrejOp()}`)
 
 
-
-
-
 //4º - Função para saber o L.A.I.R - Lucro antes do Imposto de Renda;
 //Variavel para adicionar a função 3
 let funcao3 = [lucPrejOp()];
@@ -85,8 +78,6 @@ function lair(LucIP){
 }
 console.log(lair())
 console.log(`O total do LAIR - Lucro antes do Imposto de Renda foi:  ${lair()}`)
-
-
 
 
 /*5º - Função: Provisão do Imposto de Renda,  calcular 15% sobre o LAIR e;
@@ -107,8 +98,6 @@ function provisaoCSLL(p2){
 }
 console.log(provisaoCSLL())
 console.log(`O total da provisao do CSLL foi:  ${(provisaoCSLL())}`)
-
-
 
 
 //6º - Função para saber o Lucro Liquido
